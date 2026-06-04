@@ -7,9 +7,9 @@ const ASSETS = [
   "/manifest.json",
   "/404.html",
   "/privacidad.html",
-  "/assets/icons/icon-192x192.png",
-  "/assets/icons/icon-512x512.png",
-  "/assets/media/Logo%20Easy%20Job.png"
+  "/assets/icons/icon-192x192.webp",
+  "/assets/icons/icon-512x512.webp",
+  "/assets/media/Logo%20Easy%20Job.webp"
 ];
 
 self.addEventListener("install", (e) => {
