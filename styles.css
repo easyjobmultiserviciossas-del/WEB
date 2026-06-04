@@ -1644,6 +1644,64 @@ footer::before {
   }
 }
 
+/* ========= Misión, Visión y Valores ========= */
+.mvv-section {
+  padding: 5rem 1.5rem;
+}
+
+.mvv-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  .mvv-grid {
+    grid-template-columns: 1fr;
+    max-width: 450px;
+  }
+}
+
+.mvv-card {
+  background: var(--card);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem 2rem;
+  text-align: center;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-light);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mvv-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.mvv-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.mvv-title {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--brand-dark);
+  margin-bottom: 0.75rem;
+}
+
+.mvv-text {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  color: var(--ink-light);
+  line-height: 1.7;
+  margin: 0;
+}
+
 /* ====== Animaciones ====== */
 /* Fade in desde abajo */
 .fade-in {
@@ -1863,6 +1921,17 @@ body.loaded .star-burst {
   .whatsapp-float::after {
     display: none;
   }
+
+  /* Misión, Visión y Valores */
+  .mvv-section {
+    padding: 3.5rem 1rem;
+  }
+  .mvv-card {
+    padding: 2rem 1.5rem;
+  }
+  .mvv-title {
+    font-size: 1.3rem;
+  }
 }
 
 /* Táctil */
@@ -1998,7 +2067,7 @@ body.loaded .star-burst {
 
 .hero-description-card {
   display: inline-block;
-  background: rgba(255,255,255,0.1);
+  background: rgba(0,0,0,0.12);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-radius: var(--radius-xl);
@@ -2009,19 +2078,21 @@ body.loaded .star-burst {
 }
 
 .hero-subtitle {
-  font-family: var(--font-cursive);
+  font-family: var(--font-display);
   font-size: clamp(1.3rem, 3vw + 0.3rem, 2rem);
-  color: #FCD34D;
-  font-weight: 500;
+  color: #DC2626;
+  font-weight: 600;
   margin: 0 0 0.75rem;
   text-shadow: 0 2px 12px rgba(0,0,0,0.5);
 }
 
 .hero-full .hero-description {
-  color: rgba(255,255,255,0.7);
+  font-family: var(--font-display);
+  color: rgba(255,255,255,0.95);
   font-size: clamp(0.95rem, 1.5vw + 0.2rem, 1.15rem);
   margin: 0;
   line-height: 1.7;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.5);
 }
 
 .hero-cta-group {
@@ -2291,4 +2362,10 @@ body.loaded .star-burst {
   .contact-info-icon { width: 32px; height: 32px; font-size: 1.1rem; }
   .contact-map { height: 200px; margin-top: 1rem; }
   footer { padding: 1.5rem 0 1rem; }
+
+  .mvv-section { padding: 2.5rem 0.5rem; }
+  .mvv-grid { max-width: 100%; }
+  .mvv-card { padding: 1.5rem 1rem; }
+  .mvv-title { font-size: 1.1rem; }
+  .mvv-text { font-size: 0.85rem; }
 }
