@@ -18,3 +18,9 @@ easy-job-deploy.tar.gz
 # Documentos internos (no se despliegan)
 docs/
 documentos/
+
+.git/
+.cloudflare/
+.wrangler/
+node_modules/
+wrangler.jsonc
