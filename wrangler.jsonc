@@ -8,8 +8,15 @@
   "assets": {
     "directory": ".",
     "exclude": [
+      ".git",
       "**/.git/**",
-      "**/*.mp4"
+      "**/*.mp4",
+      "node_modules",
+      "docs",
+      ".cloudflare",
+      ".wrangler",
+      "package.json",
+      "package-lock.json"
     ]
   },
   "compatibility_flags": [
