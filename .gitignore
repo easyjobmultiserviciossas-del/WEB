@@ -24,3 +24,4 @@ documentos/
 .wrangler/
 node_modules/
 wrangler.jsonc
+dist/

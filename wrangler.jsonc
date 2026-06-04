@@ -6,17 +6,9 @@
     "enabled": true
   },
   "assets": {
-    "directory": ".",
+    "directory": "dist",
     "exclude": [
-      ".git",
-      "**/.git/**",
-      "**/*.mp4",
-      "node_modules",
-      "docs",
-      ".cloudflare",
-      ".wrangler",
-      "package.json",
-      "package-lock.json"
+      "**/*.mp4"
     ]
   },
   "compatibility_flags": [
